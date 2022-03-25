@@ -2,38 +2,26 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Water Sanctuary</title>
   </head>
 
   <body>
-    <nav>
-      <h1>Water Sanctuary</h1>
-      <ul class="navigation">
-        <li>
-          <!--find names of pages-->
-          <a href="#informationalguide" class="nav-link">Informational Guide</a>
-        </li>
-        <li>
-          <a href="#donationpage" class="nav-link">Donate</a>
-        </li>
-        <li>
-          <a href="#trackerpage" class="nav-link">Tracker</a>
-        </li>
-        <li>
-          <a href="#signuppage" class="nav-link">Sign Up</a>
-        </li>
-      </ul>
 
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html"> Home </a>
+      <a href="#donationpage"> Donate </a>
+      <a href="#trackerpage"> Tracker </a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Water Sanctuary</button>
 
     <section class = "article1"> <!--first artcle-->
       <div class="box">
