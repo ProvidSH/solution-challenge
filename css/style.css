@@ -16,7 +16,7 @@
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
-    --transition: 0.3s;  
+    --transition: 0.3s;
 }
 
 html {
@@ -27,33 +27,65 @@ body {
     font-family: var(--font-family);
 }
 
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--primary-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: black;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+}
+
+.openbtn {
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  border-style: solid;
+  border-color: var(--primary-color);
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 1px 3px var(--primary-shadow);
-}
-
-nav ul {
-    list-style-type: none;
-    display:flex;
-    gap: 1.7rem;
-}
-
-nav ul li {
-    font-weight: var(--bold-font);
 }
 
 a {
@@ -62,7 +94,10 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: blue;
+}
+a:active {
+    color: purple;
 }
 
 .burger-menu {
