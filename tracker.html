@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/main.js"></script>
+    <script src="js/tracker.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Water Sanctuary</title>
+    <title>Water Sanctuary - Tracker</title>
   </head>
 
   <body>
@@ -21,68 +22,59 @@
     </div>
 
     <div id="main">
+
       <button class="openbtn" onclick="openNav()">☰ Water Sanctuary</button>
 
       <section class="q">
-        <p>1) How many minutes do you spend in the shower per day?</p>
-        <form>
-          <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-        </form>
+            <p> <span class="num"> 1) </span> How many minutes do you spend in the shower per day? &nbsp; </p>
+            <input type="text" size="4" class="inputs" id="q1" name="q1"> &nbsp; minutes. </input>
         </section>
 
         <section class="q">
-            <p>2) How many baths do you take in a week?</p>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 2) </span> How many baths do you take in a week? &nbsp; </p>
+            <input type="text" size="4" class="inputs" id="q2" name="q2"> &nbsp; baths. </input>
         </section>
 
         <section class="q">
-            <p>3) How many times have you flushed your toilet per day?</p>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 3) </span> How many times have you flushed your toilet per day? &nbsp; </p>
+            <input type="text" size="4" class="inputs" id="q3" name="q3"> &nbsp; times. </input>
         </section>
 
         <section class="q">
-            <p>4) How many minutes do you spend on running water per day?</p>
-            <h5>Examples include: washing hands, brushing teeth, etc.</h5>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 4) </span> How many minutes do you spend on running water per day? &nbsp; </p>
+            <h5>Examples include: washing hands, brushing teeth, etc. &nbsp; </h5>
+            <input type="text" size="4" class="inputs" id="q4" name="q4"> &nbsp; minutes. </input>
         </section>
 
         <section class="q">
-            <p>5) How many minutes do you spend on washing dishes by hand per day?</p>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 5) </span> How many minutes do you spend on washing dishes by hand per day? &nbsp; </p>
+            <input type="text" size="4" class="inputs" id="q5" name="q5"> &nbsp; minutes. </input>
         </section>
 
         <section class="q">
-            <p>6) How many times have you loaded your dishwasher per week?</p>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 6) </span> How many times have you loaded your dishwasher per week? &nbsp; </p>
+            <input type="text" size="4" class="inputs" id="q6" name="q6"> &nbsp; times. </input>
         </section>
 
         <section class="q">
-            <p>7) How many minutes do you spend on water outside/ for other purposes?</p>
-            <h5>Examples include: washing cars, using the hose, etc.</h5>
-            <form>
-              <textarea rows="2" cols="5" id="q1" name="q1"></textarea>
-            </form>
+            <p> <span class="num"> 7) </span> How many minutes do you spend on water outside/for other purposes? &nbsp; </p>
+            <h5> Examples include: washing cars, using the hose, etc. &nbsp; </h5>
+            <input type="text" size="4" class="inputs" id="q7" name="q7"> &nbsp; minutes. </input>
         </section>
 
-        <div id = "form">
-        <form method="POST" action="#">
-            <input type="submit" value="Send">
-          </form>
-        </div>
-        
+        <section class="r">
+            <p> <button onclick="calc();"> <b> Click HERE to View Your Result! </b> </button> Here is your average use of gallons per week: &nbsp; </p>
+            <span class="num"> <output type="text" size="4" class="inputs" id="result" name="result"> </span></output> &nbsp;gallons per week.
+        </section>
+
+        <section class="m">
+            <p> How did you do? </p>
+            <output type="text" class="inputs" id="message" name="message"> </output>
+        </section>
+
     </div>
 
-    <footer>
+    <footer class = "tracker-foot">
         <p class="copy">&copy; Copyright 2022</p>
           <p class="copy">
             Built by Andrew Campbell, Joey Chmielewski, and Elizabeth Jiang
