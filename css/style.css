@@ -82,6 +82,14 @@ body {
   padding: 16px;
 }
 
+.q, .r, .m {
+  padding: 30px 16px 30px 16px;
+}
+
+.m {
+  text-align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -127,6 +135,39 @@ section {
 
 .box p {
     margin-bottom: var(--bottom-margin-2);
+}
+
+.title {
+  text-align: center;
+}
+
+.title-desc {
+  text-align: center;
+}
+
+.donate-foot {
+  margin-top: 126px;
+}
+
+.index-foot {
+  margin-top: 84px;
+}
+
+.tracker-foot {
+  margin-top: 50px;
+}
+
+.num {
+  font-weight: bold;
+}
+
+.form {
+  text-align: center;
+}
+
+.inputs {
+  font-size: 15px;
+  text-align: center;
 }
 
 footer {
